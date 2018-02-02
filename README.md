@@ -1,6 +1,6 @@
 # ToDo
 
-ToDo is an iOS app is a demo of RIBs architecture https://github.com/uber/RIBs/wiki
+ToDo iOS app is a demo of RIBs architecture https://github.com/uber/RIBs/wiki
 
 # You can find examples of:
 
