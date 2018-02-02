@@ -1,0 +1,53 @@
+PODS:
+  - DynamicButton (5.0.0)
+  - Eureka (4.0.1)
+  - IGListKit (3.1.1):
+    - IGListKit/Default (= 3.1.1)
+  - IGListKit/Default (3.1.1):
+    - IGListKit/Diffing
+  - IGListKit/Diffing (3.1.1)
+  - Realm (3.1.0):
+    - Realm/Headers (= 3.1.0)
+  - Realm/Headers (3.1.0)
+  - RealmSwift (3.1.0):
+    - Realm (= 3.1.0)
+  - REFrostedViewController (2.4.8)
+  - RIBs (0.9.1):
+    - RxSwift (~> 4.0)
+  - RxCocoa (4.1.1):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.1)
+  - SnapKit (4.0.0)
+  - SVProgressHUD (2.2.2)
+  - TransitionButton (0.3.0)
+
+DEPENDENCIES:
+  - DynamicButton
+  - Eureka
+  - IGListKit
+  - Realm
+  - RealmSwift
+  - REFrostedViewController
+  - RIBs
+  - RxCocoa
+  - SnapKit
+  - SVProgressHUD
+  - TransitionButton
+
+SPEC CHECKSUMS:
+  DynamicButton: 4c2fef968e4aa0a8a6ed7ca6b8a58c8e21a36cdc
+  Eureka: c8bd5cc07143b6f66268c208d28a246c99b41955
+  IGListKit: cb97f405ae43e59fe1da74271e19427ec20d3c07
+  Realm: 09513d7c054678d65cd02ce09871f805b0d758ac
+  RealmSwift: e868fee9b10e5490ad94b6b6ecd9027944da1824
+  REFrostedViewController: a893b4979ba1f200c547aef9ff4c3fd5a18f5923
+  RIBs: 879184fbca567425c488d6b3d14a9c5abfbf9d47
+  RxCocoa: fd0862fd2df95fa55562ad28ffd2522c25eb4a85
+  RxSwift: c6e3b1c7b325c7d121cd4327e9d98b7ed746b570
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
+  TransitionButton: 0bf7e5ffe80030f9d10d57983a04acf2f511998a
+
+PODFILE CHECKSUM: 88984f6a1e0e346a4807725fd3fe554b5aeb0b86
+
+COCOAPODS: 1.4.0
