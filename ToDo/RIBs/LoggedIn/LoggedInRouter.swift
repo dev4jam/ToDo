@@ -18,17 +18,19 @@ protocol LoggedInViewControllable: ViewControllable {
     func replaceModal(viewController: ViewControllable?)
 }
 
-final class LoggedInRouter: ViewableRouter<LoggedInInteractable, LoggedInViewControllable>, LoggedInRouting {
-    private var drawerBuilder: DrawerBuildable
+final class LoggedInRouter: Router<LoggedInInteractable>, LoggedInRouting {
+    private let viewController: LoggedInViewControllable
+    private let drawerBuilder: DrawerBuildable
     private var drawerChild: (router: DrawerRouting, actionableItem: DrawerActionableItem)?
 
     required init(interactor: LoggedInInteractable,
                   viewController: LoggedInViewControllable,
                   drawerBuilder: DrawerBuildable) {
 
-        self.drawerBuilder = drawerBuilder
+        self.drawerBuilder  = drawerBuilder
+        self.viewController = viewController
 
-        super.init(interactor: interactor, viewController: viewController)
+        super.init(interactor: interactor)
 
         interactor.router = self
     }
