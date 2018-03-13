@@ -29,6 +29,8 @@ RootActionableItem, UrlHandler {
     weak var router: RootRouting?
     weak var listener: RootListener?
 
+    private var isFirstTimeLaunch: Bool = true
+
     // TODO: Add additional dependencies to constructor. Do not perform any logic
     // in constructor.
     override init(presenter: RootPresentable) {
@@ -40,8 +42,6 @@ RootActionableItem, UrlHandler {
     override func didBecomeActive() {
         super.didBecomeActive()
         // TODO: Implement business logic here.
-
-        router?.routeToLoggedOut()
     }
 
     override func willResignActive() {
@@ -54,6 +54,16 @@ RootActionableItem, UrlHandler {
 
         if let loggedInActionableItem = loggedInActionableItem {
             loggedInActionableItemSubject.onNext(loggedInActionableItem)
+        }
+    }
+
+    // MARK: - RootPresentableListener
+
+    func viewDidAppear() {
+        if isFirstTimeLaunch {
+            isFirstTimeLaunch = false
+
+            router?.routeToLoggedOut()
         }
     }
 

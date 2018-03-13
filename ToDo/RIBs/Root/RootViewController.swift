@@ -11,9 +11,7 @@ import SnapKit
 import UIKit
 
 protocol RootPresentableListener: class {
-    // TODO: Declare properties and methods that the view controller can invoke to perform
-    // business logic, such as signIn(). This protocol is implemented by the corresponding
-    // interactor class.
+    func viewDidAppear()
 }
 
 final class RootViewController: UIViewController, RootPresentable, RootViewControllable {
@@ -32,6 +30,12 @@ final class RootViewController: UIViewController, RootPresentable, RootViewContr
         super.viewDidLoad()
 
         view.backgroundColor = UIColor.white
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        listener?.viewDidAppear()
     }
 
     // MARK: - RootViewControllable
