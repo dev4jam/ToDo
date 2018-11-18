@@ -9,8 +9,8 @@
 import RIBs
 
 protocol ListInteractable: Interactable, ItemListener {
-    weak var router: ListRouting? { get set }
-    weak var listener: ListListener? { get set }
+    var router: ListRouting? { get set }
+    var listener: ListListener? { get set }
 }
 
 protocol ListViewControllable: ViewControllable {

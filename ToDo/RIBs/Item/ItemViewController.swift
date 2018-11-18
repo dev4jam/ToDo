@@ -52,7 +52,7 @@ final class ItemViewController: UIViewController, ItemPresentable, ItemViewContr
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
 
-        if isMovingFromParentViewController {
+		if isMovingFromParent {
             listener?.didNavigateBack()
         }
     }

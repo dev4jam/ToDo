@@ -14,7 +14,7 @@ protocol RootDependency: Dependency {
     // created by this RIB.
 
     var application: UIApplication { get }
-    var launchOptions: [UIApplicationLaunchOptionsKey: Any]? { get }
+	var launchOptions: [UIApplication.LaunchOptionsKey: Any]? { get }
     var service: ToDoServiceProtocol { get }
     var config: Variable<Config> { get }
 }
@@ -28,7 +28,7 @@ final class RootComponent: Component<RootDependency> {
         return dependency.application
     }
 
-    var launchOptions: [UIApplicationLaunchOptionsKey: Any]? {
+	var launchOptions: [UIApplication.LaunchOptionsKey: Any]? {
         return dependency.launchOptions
     }
 

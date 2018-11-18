@@ -15,7 +15,7 @@ protocol RootRouting: ViewableRouting {
 }
 
 protocol RootPresentable: Presentable {
-    weak var listener: RootPresentableListener? { get set }
+    var listener: RootPresentableListener? { get set }
     // TODO: Declare methods the interactor can invoke the presenter to present data.
 }
 

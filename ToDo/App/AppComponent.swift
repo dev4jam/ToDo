@@ -12,12 +12,12 @@ import RxSwift
 
 final class AppComponent: Component<EmptyDependency>, RootDependency {
     let application: UIApplication
-    let launchOptions: [UIApplicationLaunchOptionsKey : Any]?
+	let launchOptions: [UIApplication.LaunchOptionsKey : Any]?
     let service: ToDoServiceProtocol
     let config: Variable<Config>
 
 
-    init(application: UIApplication, launchOptions: [UIApplicationLaunchOptionsKey : Any]?) {
+	init(application: UIApplication, launchOptions: [UIApplication.LaunchOptionsKey : Any]?) {
         let configSnapshot = Config(maxIncompleteItems: 10)
 
         self.application   = application
