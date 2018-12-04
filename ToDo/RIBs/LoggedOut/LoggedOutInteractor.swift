@@ -14,7 +14,7 @@ protocol LoggedOutRouting: ViewableRouting {
 }
 
 protocol LoggedOutPresentable: Presentable {
-    weak var listener: LoggedOutPresentableListener? { get set }
+    var listener: LoggedOutPresentableListener? { get set }
     // TODO: Declare methods the interactor can invoke the presenter to present data.
     
     func showLoadingIndicator()

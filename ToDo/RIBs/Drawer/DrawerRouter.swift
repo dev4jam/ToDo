@@ -11,8 +11,8 @@ import RxSwift
 
 protocol DrawerInteractable: Interactable, MenuListener, ListListener {
 
-    weak var router: DrawerRouting? { get set }
-    weak var listener: DrawerListener? { get set }
+    var router: DrawerRouting? { get set }
+    var listener: DrawerListener? { get set }
 }
 
 protocol DrawerViewControllable: ViewControllable {

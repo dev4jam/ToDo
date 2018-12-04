@@ -10,8 +10,8 @@ import RIBs
 import RxSwift
 
 protocol LoggedInInteractable: Interactable, DrawerListener {
-    weak var router: LoggedInRouting? { get set }
-    weak var listener: LoggedInListener? { get set }
+    var router: LoggedInRouting? { get set }
+    var listener: LoggedInListener? { get set }
 }
 
 protocol LoggedInViewControllable: ViewControllable {

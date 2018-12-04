@@ -21,7 +21,7 @@ protocol ListRouting: ViewableRouting {
 }
 
 protocol ListPresentable: Presentable, LoadingPresentable {
-    weak var listener: ListPresentableListener? { get set }
+    var listener: ListPresentableListener? { get set }
     // TODO: Declare methods the interactor can invoke the presenter to present data.
 
     func showIncompleteItems(_ items: [ItemViewModel])

@@ -14,7 +14,7 @@ protocol ItemRouting: ViewableRouting {
 }
 
 protocol ItemPresentable: Presentable {
-    weak var listener: ItemPresentableListener? { get set }
+    var listener: ItemPresentableListener? { get set }
     // TODO: Declare methods the interactor can invoke the presenter to present data.
 
     func showTitle(_ title: String)

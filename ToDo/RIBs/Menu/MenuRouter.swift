@@ -9,8 +9,8 @@
 import RIBs
 
 protocol MenuInteractable: Interactable {
-    weak var router: MenuRouting? { get set }
-    weak var listener: MenuListener? { get set }
+    var router: MenuRouting? { get set }
+    var listener: MenuListener? { get set }
 }
 
 protocol MenuViewControllable: ViewControllable {

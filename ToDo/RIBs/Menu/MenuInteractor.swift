@@ -15,7 +15,7 @@ protocol MenuRouting: ViewableRouting {
 }
 
 protocol MenuPresentable: Presentable {
-    weak var listener: MenuPresentableListener? { get set }
+    var listener: MenuPresentableListener? { get set }
     // TODO: Declare methods the interactor can invoke the presenter to present data.
 
     func showMenuItems(_ sections: [Section])

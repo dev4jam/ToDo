@@ -16,7 +16,7 @@ protocol DrawerRouting: ViewableRouting {
 }
 
 protocol DrawerPresentable: Presentable {
-    weak var listener: DrawerPresentableListener? { get set }
+    var listener: DrawerPresentableListener? { get set }
     // TODO: Declare methods the interactor can invoke the presenter to present data.
 
     func showSelectedMenuItem(_ menuItem: String)
