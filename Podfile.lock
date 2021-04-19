@@ -1,27 +1,23 @@
 PODS:
-  - DynamicButton (6.1.0)
-  - Eureka (4.3.0)
-  - IGListKit (3.4.0):
-    - IGListKit/Default (= 3.4.0)
-  - IGListKit/Default (3.4.0):
-    - IGListKit/Diffing
-  - IGListKit/Diffing (3.4.0)
-  - Realm (3.12.0):
-    - Realm/Headers (= 3.12.0)
-  - Realm/Headers (3.12.0)
-  - RealmSwift (3.12.0):
-    - Realm (= 3.12.0)
+  - DynamicButton (6.2.1)
+  - Eureka (5.3.3)
+  - IGListDiffKit (4.0.0)
+  - IGListKit (4.0.0):
+    - IGListDiffKit (= 4.0.0)
+  - Realm (10.7.2):
+    - Realm/Headers (= 10.7.2)
+  - Realm/Headers (10.7.2)
+  - RealmSwift (10.7.2):
+    - Realm (= 10.7.2)
   - REFrostedViewController (2.4.8)
   - RIBs (0.9.1):
     - RxSwift (~> 4.0)
-  - RxAtomic (4.4.0)
-  - RxCocoa (4.4.0):
-    - RxSwift (~> 4.0)
-  - RxSwift (4.4.0):
-    - RxAtomic (~> 4.4)
-  - SnapKit (4.2.0)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxSwift (4.5.0)
+  - SnapKit (5.0.1)
   - SVProgressHUD (2.2.5)
-  - TransitionButton (0.5.2)
+  - TransitionButton (0.5.3)
 
 DEPENDENCIES:
   - DynamicButton
@@ -37,15 +33,15 @@ DEPENDENCIES:
   - TransitionButton
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - DynamicButton
     - Eureka
+    - IGListDiffKit
     - IGListKit
     - Realm
     - RealmSwift
     - REFrostedViewController
     - RIBs
-    - RxAtomic
     - RxCocoa
     - RxSwift
     - SnapKit
@@ -53,20 +49,20 @@ SPEC REPOS:
     - TransitionButton
 
 SPEC CHECKSUMS:
-  DynamicButton: 5a3ae2bf26dc196fb6c85b3e1aac956add860718
-  Eureka: 6d711cb30ca333b4bc893110285a722ae3840114
-  IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
-  Realm: cdaef23c4ddb36ab1ddffed23f5a7f3332fc5585
-  RealmSwift: 5576324033f0aa5ef1e0a839a3da2281dff47a7f
+  DynamicButton: 95f30460793bd3510a5c213ac1b810a5e3d54b6a
+  Eureka: e6d720290c56bb23333ad1a0e020b2a98a0e9a43
+  IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
+  IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
+  Realm: e523da9ade306c5ae87e85dc09fdef148d3e1cc1
+  RealmSwift: 4f6758c3adbdcc87f7b7777107226532a077f61c
   REFrostedViewController: a893b4979ba1f200c547aef9ff4c3fd5a18f5923
   RIBs: 879184fbca567425c488d6b3d14a9c5abfbf9d47
-  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
-  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
-  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
-  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  TransitionButton: fb271583d9c9e4bb116b97103047e5157653f233
+  TransitionButton: 36283346e17c64775a1b3bc3a7a72940a367de1f
 
-PODFILE CHECKSUM: 665e0767b2ec078e6393cc7b676e4635a6300ae3
+PODFILE CHECKSUM: 82353c97b5e1940f4a62bd7f098391a76d858f4b
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.10.1
